@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import {
@@ -94,6 +95,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
+
+Button.propTypes = {
+  variant: PropTypes.oneOf(['primary', 'secondary', 'danger']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  label: PropTypes.string,
+  isFullWidth: PropTypes.bool,
+};
 
 Button.defaultProps = {
   variant: 'primary',
