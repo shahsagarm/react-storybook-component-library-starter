@@ -24,3 +24,28 @@ export const Danger = Template.bind({});
 Danger.args = {
   variant: 'danger',
 };
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  size: 'large',
+};
+
+export const FullWidth = Template.bind({});
+FullWidth.args = {
+  isFullWidth: true,
+};
